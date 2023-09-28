@@ -1,11 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<!--COMIENZO DEL HEAD-->  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SPA BAMBÚ</title> <!--Para nombrar la pestaña de la web-->
+    <link rel="Shortcut icon" href="img/logo.ico" type="image/x-icon"> <!--ICO del logo -->
+    <link rel="stylesheet" href="css/style.css"> <!--Unir el CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!--fuentes de google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
 </head>
+<!--FIN DEL HEAD-->  
+
+
+<!--COMIENZO DEL CONTENIDO-->  
 <body>
-    
+    <header>  <!--Este header contiene el logo y el nav menú-->
+        <div id="logo">
+            <img src="img/logo.jpg" width= "300" height="300" alt="logo de la empresa"> <!--El atributo "alt" nos sirve para el SEO-->
+        </div>
+        <h1 id="titulo">SPA BAMBÚ</h1> <!--Este tirulo debe ir centrado entre el logo y el nav menú-->
+        <nav>
+            <ul class="navbar">
+                <li>INICIO</li> 
+                <li><a href="pages/servicios.html" target="_blank">SERVICIOS</a></li> <!-- El 'targe = "_blank"' es para dejar "fija y no perder" la pestaña del inicio y que se abran las otras pestañas del menú a un lado. USAR SOLO EN EL INDEX-->
+                <li><a href="pages/galeria.html" target="_blank">GALERÍA FOTOGRÁFICA</a></li>
+                <li><a href="pages/mis_reservas.html" target="_blank">MIS RESERVAS</a></li>
+            </ul>
+        </nav>
+    </header>  <!--Fin del header que es igual en las 4 pág-->  
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <main>
+       <div>
+            <section>
+                <article>
+                    <div class="primer_contenido_index"> <!--En este div va un carrete de fotografias con algunos servicios, su título y una pequeña descripción-->
+                        <h3>Algunos servicios</h3>
+                        <img src="img/masaje-con-piedras-calientes.jpg" width="300" height="300" alt="carrete de fotos">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus quidem iure praesentium esse tempora quae eius vero? Debitis doloribus.
+                        Quo vero, esse quibusdam, enim voluptatem ut expedita ad eius illo.</p>
+                    </div>
+                </article>
+                <br>
+                <br>
+                <br>
+                <article>
+                    <div class="opiniones_clientes"> <!--En este div va la sección de comentarios de los usuarios sobre el servicio-->
+                        <h3>OPINIONES DE CLIENTES</h3>
+                        <p>Aquí van comentarios de los usuarios con valoración</p>
+                    </div>
+                </article>
+            </section>
+       </div>
+       
+       <br>
+       <br>
+       
+        <aside>  <!--Esta es la sección lateral, que va al lado del section-->
+            <div class="quienes_somos">
+                <h2>¿QUIÉNES SOMOS?</h2>  
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe, fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
+                <img src="img/logo.jpg" width="250" height="300" alt="">
+            </div>
+            <br>
+            <br>
+            <div id="direccion">
+                <h3>DIRECCIÓN</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3286.0826502707114!2d-58.47383975608753!3d-34.55146268524606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1695861439596!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <br>
+            <br>
+            <div id="horario">
+                <h3>HORARIO DE ATENCIÓN</h3>
+                <p>Lunes a sábado de 9:00am hasta las 10:00pm. Domingos desde las 10:00am hasta las 7:00pm</p>
+            </div>
+        </aside>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   <footer>
+        <div id="copyright">
+            <h4>Copyright © 2023 Spa Bambú</h4>
+        </div>
+
+        <div class="redes">
+            <p>Siguenos en nuestras redes</p>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <i class="fa-brands fa-facebook"></i>  <!--Enlace del icon-->
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+
+        <div class="contacto">
+            <p>Contáctanos por WhatsApp</p>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+         </div>
+
+
+    </footer>  
+
+    <script src="https://kit.fontawesome.com/2abd5c34d8.js" crossorigin="anonymous"></script> <!--Este es el scrip de los icons-->
+   
 </body>
 </html>

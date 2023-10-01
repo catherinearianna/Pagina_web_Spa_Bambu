@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--COMIENZO DEL HEAD-->  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIS RESERVAS</title>
-    <link rel="Shortcut icon" href="../img/logo.ico" type="image/x-icon"> <!--ICO del logo -->
-    <link rel="stylesheet" href="../css/style.css"> <!--Unir el CSS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--fuentes de google fonts-->
+    <title>SPA BAMBÚ - RESERVAS</title> <!--Para nombrar la pestaña de la web-->
+    <link rel="Shortcut icon" href="img/logo.ico" type="image/x-icon"> <!--ICO del logo -->
+    <link rel="stylesheet" href="css/style.css"> <!--Unir el CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!--fuentes de google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
 </head>
-
 
 
 <body>
@@ -18,22 +18,63 @@
         <div id="logo">
             <img src="../img/logo.jpg" width= "300" height="300" alt="logo de la empresa">
         </div>
-        <h1 id="titulo">SPA BAMBÚ</h1> <!--Este tirulo debe ir centrado entre el logo y el nav menú-->
+        <h1 id="titulo">SPA BAMBÚ - RESERVAS</h1> <!--Este tirulo debe ir centrado entre el logo y el nav menú-->
         <nav>
             <ul class="navbar">
                 <li><a href="../index.html">INICIO</a></li> 
-                <li><a href="../pages/servicios.html">SERVICIOS</a></li> 
-                <li><a href="../pages/galeria.html"> GALERÍA FOTOGRÁFICA</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li> 
+                <li><a href="galeria.html"> GALERÍA FOTOGRÁFICA</a></li>
                 <li>MIS RESERVAS</li>
             </ul>
         </nav>
     </header> <!--Fin del header que es igual en las 4 pág--> 
     
 
-    <main></main> <!--Dentro del main va todo el contenido--> 
+    <main> <!--Dentro del main va todo el contenido--> 
+        <section>
+            <form>
+                <br>
+                <h2>FORMULARIO DE DATOS DEL USUARIO</h2>
+                <br>
 
+                <p>APELLIDO:             </p> <span> <INPUT type="text" name="txt_Apellido" autocapitalize="on" required ></INPUT></span>  
+                <br>
+                <p>NOMBRE:               </p> <span> <INPUT type="text" name="txt_Nombre" autocapitalize="on" required ></INPUT></span>  
+                <br>
+                <p>e-Mail:               </p> <span> <INPUT type="email" name="m_email"  required ></INPUT></span>  
+                <br>
+                <p>TELÉFONO DE CONTACTO: </p> <span> <INPUT type="tel" name="tel_Telefono" required ></INPUT></span>  
+                <br>
+                <p>FECHA DE NACIMIENTO : </p> <span> <INPUT type="date" name="date_Nacimiento"  ></INPUT></span>  
+                <br>
+                <fieldset>
+                    <legend>  SEXO    </legend>
+                    <input type="radio" name="sexo" id="masc" >
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sexo" id="fem" >
+                    <label for="fem">Femenino</label>
+                    <input type="radio" name="sexo" id="otro" >
+                    <label for="otro">No binario</label>
+                </fieldset>
+                <br>
+                <p>CONTANOS TUS GUSTOS:  </p> <span> <INPUT type="text" name="txt_Comentarios" ></INPUT></span> 
+            
+                <br>
+                <br>
+                <button type="submit"> REMITIR FORMULARIO </button>
+                <br>
+                <br>
+                
+            </form>
+        </section>
 
+        <aside>
+            <br>
+            <iframe src="https://calendar.google.com/calendar/embed?src=940ecgmrv6oe94rt58c1p1p7sg%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <br>
+        </aside>
 
+    </main>
     <br>
     <br>
     <br>

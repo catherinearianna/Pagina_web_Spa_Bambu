@@ -17,23 +17,20 @@
 <!--COMIENZO DEL CONTENIDO-->  
 <body>
     <header>  <!--Este header contiene el logo y el nav menú-->
-        <div id="logo">
-            <img src="img/logo.jpg" width= "300" height="300" alt="logo de la empresa"> <!--El atributo "alt" nos sirve para el SEO-->
+        <div>
+            <img id="logo" src="img/logo.jpg" alt="logo de la empresa"> <!--El atributo "alt" nos sirve para el SEO-->
         </div>
         <h1 id="titulo">SPA BAMBÚ</h1> <!--Este titulo debe ir centrado entre el logo y el nav menú-->
-        <nav>
-            <ul class="navbar">
-                <li>INICIO</li> 
-                <li><a href="pages/servicios.html" target="_blank">SERVICIOS</a></li> <!-- El 'targe = "_blank"' es para dejar "fija y no perder" la pestaña del inicio y que se abran las otras pestañas del menú a un lado. USAR SOLO EN EL INDEX-->
-                <li><a href="pages/galeria.html" target="_blank">GALERÍA FOTOGRÁFICA</a></li>
-                <li><a href="pages/mis_reservas.html" target="_blank">MIS RESERVAS</a></li>
+        <nav class="navbar">
+            <ul>
+                <li><span><a>INICIO</a></span></li> 
+                <li><span><a href="pages/servicios.html" target="_blank">SERVICIOS</a></span></li> <!-- El 'targe = "_blank"' es para dejar "fija y no perder" la pestaña del inicio y que se abran las otras pestañas del menú a un lado. USAR SOLO EN EL INDEX-->
+                <li><span><a href="pages/galeria.html" target="_blank">GALERÍA</a></span></li>
+                <li><span><a href="pages/mis_reservas.html" target="_blank">RESERVAS</a></span></li>
             </ul>
         </nav>
     </header>  <!--Fin del header que es igual en las 4 pág-->  
 
-    <br>
-    <br>
-    <br>
     <br>
     <br>
 
@@ -42,8 +39,8 @@
             <section>
                 <article>
                     <div class="primer_contenido_index"> <!--En este div va un carrete de fotografias con algunos servicios, su título y una pequeña descripción-->
+                        <img src="img/masaje-con-piedras-calientes.jpg" alt="carrete de fotos">
                         <h3>Algunos servicios</h3>
-                        <img src="img/masaje-con-piedras-calientes.jpg" width="300" height="300" alt="carrete de fotos">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Possimus quidem iure praesentium esse tempora quae eius vero? Debitis doloribus.
                         Quo vero, esse quibusdam, enim voluptatem ut expedita ad eius illo.</p>
@@ -84,18 +81,6 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe, fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
                 <img src="img/logo.jpg" width="250" height="300" alt="">
             </div>
-            <br>
-            <br>
-            <div id="direccion">
-                <h3>DIRECCIÓN</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3286.0826502707114!2d-58.47383975608753!3d-34.55146268524606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1695861439596!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <br>
-            <br>
-            <div id="horario">
-                <h3>HORARIO DE ATENCIÓN</h3>
-                <p>Lunes a sábado de 9:00am hasta las 10:00pm. Domingos desde las 10:00am hasta las 7:00pm</p>
-            </div>
         </aside>
     </main>
     <br>
@@ -105,24 +90,38 @@
     <br>
     <br>
    <footer>
-        <div id="copyright">
-            <h4>Copyright © 2023 Spa Bambú</h4>
-        </div>
-
+        
         <div class="redes">
-            <p>Siguenos en nuestras redes</p>
+            <h3>Siguenos en Nuestras Redes</h3>
             <i class="fa-brands fa-instagram"></i>
             <a href="https://instagram.com" target="_blank">Instagram</a>
             <i class="fa-brands fa-facebook"></i>  <!--Enlace del icon-->
             <a href="https://facebook.com" target="_blank">Facebook</a>
+            <div class="contacto">
+                <h3>Contáctanos por WhatsApp</h3>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+             </div>
         </div>
 
-        <div class="contacto">
-            <p>Contáctanos por WhatsApp</p>
-            <i class="fa-brands fa-whatsapp"></i>
-            <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
-         </div>
+         <div id="direccion">
+            <h3>Nuestro Spa</h3>
+            <p> Av. Arcoiris del Cielo 250 </p>
+            <p>E-mail: spabambu@gmail.org</p>
+        </div>
 
+        <div>
+            <iframe id ="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3286.0826502707114!2d-58.47383975608753!3d-34.55146268524606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1695861439596!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        <div id="horarios">
+            <h3>Horarios de Atención</h3>
+            <p> Lunes a sábado de 9 am. a 10 pm.</p>
+            <p> Domingos de 10 am. a 7 pm.</p>
+        </div>
+
+        <div class="copyright" >
+            <h4>Copyright © 2023 Spa Bambú</h4>
+        </div>
 
     </footer>  
 

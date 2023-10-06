@@ -1,3 +1,7 @@
+body{
+    background-color: #b7d2c3;
+    overflow-x: hidden;
+}
 /* comienza el diseño del header */
 header {
     background-color: #3d6953;
@@ -29,6 +33,7 @@ header {
     height: 40px;
     float: right;
     margin-top: 20px;
+    
 }
 
 .navbar ul {
@@ -100,7 +105,214 @@ li::after
     transform: translateX(0.15em);
 }
 
+/* Comienza el diseño del carrousel de presentación con dos imagenes y promocionando servicios */
 
+.carrousel {
+    width: 50%;
+    max-width: 120em;
+    padding: 2em; 
+    border-style: inset;
+    border-color: #e1c6cc;
+    background-color: #e1c6cc;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    overflow: hidden;
+    margin: auto;
+    float: right;
+}
+
+.fondo_grande {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    padding: 2em;
+    background-color: #b7d2c3;
+    border-radius: 1em;
+    border-style: outset;
+    transition: all .5s ease;
+    transform: translateX(0%);  
+}
+
+.fondo_grande .img {
+    width: calc(100% / 2 - 2em);
+    min-height: 10vh;
+    border-style: inset;
+    border-color: #b7d2c3;
+    border-radius: 1em;
+    transition: all 0.4s ease;
+}
+
+.puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: #b7d2c3;
+    list-style-type: none;
+}
+
+.activo {
+    background-color: #7ca692; 
+}
+
+/* Diseño de botón para ver más */
+.masServicios {
+    border: 1px solid #3d6953; 
+    padding: 10px; 
+    background-color: #3d6953; 
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'roboto'; 
+    border-radius: 50px; 
+    float: right;
+}
+
+/* Diseño del titular al lado del carrusel de fotos */
+
+.titular {
+    width: 30%;
+    height: 100%;
+    padding: 2em;
+    background-color: #3d6953;
+    float: left;
+    text-align: center;
+    font-family: 'abril fatface';
+    color: rgb(0, 0, 0);
+    margin-top: 200px;
+    margin-left: 60px;
+}
+/* Diseño sección opiniones de clientes */
+.clientes {
+    background-color: #7ca692;
+    width: 90%;
+    height: 300px;
+    padding: 4em;
+    border: 1px solid #3d6953;
+    border-radius: 1em; 
+    margin-top: 650px;
+    margin-left: 10px;
+}
+
+.clientes h3 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-family: 'abril fatface';
+}
+
+.opinion1 {
+background-color: #e1c6cc;
+width: 25%;
+height: 150px;
+padding: 2em;
+border-style: outset;
+border-radius: 1em;
+float:left;
+}
+
+.opinion1 p {
+    text-align: center;
+    font-family: 'roboto';
+    text-justify: distribute;
+    font-style: oblique;
+}
+
+.opinion1 h4 {
+    text-align: end;
+    font-style: italic;
+    font-family: 'roboto';
+}
+
+.opinion2 {
+    background-color: #e1c6cc;
+    width: 25%;
+    height: 150px;
+    padding: 2em;
+    border-style: outset;
+    border-radius: 1em;
+    margin-left: 65px;
+    float:left;
+    }
+    
+    .opinion2 p {
+        text-align: center;
+        font-family: 'roboto';
+        text-justify: distribute;
+        font-style: oblique;
+    }
+    
+    .opinion2 h4 {
+        text-align: end;
+        font-style: italic;
+        font-family: 'roboto';
+    }
+
+    .opinion3 {
+        background-color: #e1c6cc;
+        width: 25%;
+        height: 150px;
+        padding: 2em;
+        border-style: outset;
+        border-radius: 1em;
+        float: right;
+        }
+        .opinion3 p {
+            text-align: center;
+            font-family: 'roboto';
+            text-justify: distribute;
+            font-style: oblique;
+        }
+        
+        .opinion3 h4 {
+            text-align: end;
+            font-style: italic;
+            font-family: 'roboto';
+        }
+/* Comienza el diseño del aside y se agrega un video al lado */
+.quienes_somos {
+    background-image: url(/img/fondo.jpg);
+    background-size: auto auto;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 2em;
+    width: 30%;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+    
+.quienes_somos h2 {
+    text-align: left;
+    font-family: 'abril fatface';
+    color: black;
+}
+.quienes_somos p {
+    text-align: center;
+    font-size: larger;
+    font-family: 'roboto';
+}
+
+#logoPequeño{
+    width: 100px;
+    height: 100px;
+    justify-content: end;
+    float: right;
+    margin-left: 50px;
+}
 /* Comienza el diseño del footer */
 footer {
     width: 1570px;
@@ -110,7 +322,6 @@ footer {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 0;
-    padding: 0;
 }
 
 .redes{

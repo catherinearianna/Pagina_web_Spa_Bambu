@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA BAMBÚ</title> <!--Para nombrar la pestaña de la web-->
     <link rel="Shortcut icon" href="img/logo.ico" type="image/x-icon"> <!--ICO del logo -->
-    <link rel="stylesheet" href="css/style.css"> <!--Unir el CSS-->
+    <link rel="stylesheet" href="./css/style.css"> <!--Unir el CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!--fuentes de google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
@@ -37,35 +37,50 @@
     <main>
        <div>
             <section>
-                <article>
-                    <div class="primer_contenido_index"> <!--En este div va un carrete de fotografias con algunos servicios, su título y una pequeña descripción-->
-                        <img src="img/masaje-con-piedras-calientes.jpg" alt="carrete de fotos">
-                        <h3>Algunos servicios</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Possimus quidem iure praesentium esse tempora quae eius vero? Debitis doloribus.
-                        Quo vero, esse quibusdam, enim voluptatem ut expedita ad eius illo.</p>
+                <article class = article1>
+                    <!-- Se arma un carrousel con dos fotos ofreciendo servicios que se pueden compartir, la descripción puede ir en la foto -->
+                    <div class="carrousel"> <!--En este div va un carrete de fotografias con algunos servicios, su título y una pequeña descripción-->
+                        <div class="fondo_grande">
+                            <img src="./img/spa con amigas.jpg" alt="spa con amigas" class = "img">
+                            <img src="./img/spa en pareja.jpg" alt="spa en pareja" class="img">
+                        </div>
+
+                        <ul class="puntos">
+                            <li class="punto" class="activo"></li>
+                            <li class="punto" class="activo"></li>
+                        </ul>
+                        <!-- Se agrega un botón para ir a ver más servicios -->
+                        <a class="masServicios" href="./pages/servicios.html" target ="_blank"><b>Ver más</b></a>
                     </div>
                 </article>
                 <br>
                 <br>
                 <br>
                 <article>
-                    <div class="opiniones_clientes"> <!--En este div va la sección de comentarios de los usuarios sobre el servicio-->
+                    <div class="titular">
+                        <h2>"Titular llamativo del Spa Bambú"</h2>
+                    </div>
+                </article>
+                <br>
+                <br>
+                <br>
+                <article class="opiniones">
+                    <div class="clientes"> <!--En este div va la sección de comentarios de los usuarios sobre el servicio-->
                         <h3>OPINIONES DE CLIENTES</h3>
-                            <div>
-                                <p>Ana María</p>
-                                <p>Me encantó el lugar, necesitaba relajarme después de una semana muy intensa en el trabajo y gracias al personal de Spa Bambú
-                                logré desestresarme y liberar tensión. Mi majase favorito fue el de piedras calientes.</p>
+                            <div class="opinion1">
+                                <p>"Me encantó el lugar, necesitaba relajarme después de una semana muy intensa en el trabajo y gracias al personal de Spa Bambú
+                                logré desestresarme y liberar tensión. Mi majase favorito fue el de piedras calientes."</p>
+                                <h4>Ana María</h4>
                             </div>
-                            <div>
-                                <p>Diego Duarte</p>
-                                <p>¡¡Recomendable!! Mi esposa y yo hicimos el circuito en pareja y lo volveriamos a hacer mil veces más.
-                                Nos atendieron con la mejor onda y los masajes estuvieron estupendos.</p>
+                            <div class= "opinion2">
+                                <p>"¡¡Recomendable!! Mi esposa y yo hicimos el circuito en pareja y lo volveriamos a hacer mil veces más.
+                                Nos atendieron con la mejor onda y los masajes estuvieron estupendos."</p>
+                                <h4>Diego Duarte</h4>
                             </div>
-                            <div>
-                                <p>Lucia Alejandra</p>
-                                <p>Quedamos re encantadas, vine con mis amigas e hicimos el circuito en grupo y luego disfrutamos de la pileta climatizada, 
-                                pasamos un excelente día.</p>
+                            <div class="opinion3">
+                                <p>"Quedamos re encantadas, vine con mis amigas e hicimos el circuito en grupo y luego disfrutamos de la pileta climatizada, 
+                                pasamos un excelente día."</p>
+                                <h4>Lucia Alejandra</h4>
                             </div>
                     </div>
                 </article>
@@ -77,15 +92,17 @@
        
         <aside>  <!--Esta es la sección lateral, que va al lado del section-->
             <div class="quienes_somos">
-                <h2>¿QUIÉNES SOMOS?</h2>  
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe, fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
-                <img src="img/logo.jpg" width="250" height="300" alt="">
+                <h2>¿QUIÉNES SOMOS?</h2> 
+                <div class="descripcion">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe, 
+                    fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
+                </div>
+                
+                <img id="logoPequeño" src="img/logo.jpg" alt="logo pequeño">
             </div>
         </aside>
     </main>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -126,6 +143,6 @@
     </footer>  
 
     <script src="https://kit.fontawesome.com/2abd5c34d8.js" crossorigin="anonymous"></script> <!--Este es el scrip de los icons-->
-   
+    <script defer src="./javascript/funciones.js"></script>
 </body>
 </html>

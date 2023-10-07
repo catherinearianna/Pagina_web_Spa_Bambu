@@ -16,7 +16,6 @@
 
 
 <!--COMIENZO DEL CONTENIDO-->
-
 <body>
     <header> <!--Este header contiene el logo y el nav menú-->
         <div>
@@ -25,11 +24,11 @@
         <h1 id="titulo">SPA BAMBÚ</h1> <!--Este titulo debe ir centrado entre el logo y el nav menú-->
         <nav class="navbar">
             <ul>
-                <li><span><a>INICIO</a></span></li>
-                <li><span><a href="pages/servicios.html" target="_blank">SERVICIOS</a></span></li>
+                <li><a>INICIO</a></li>
+                <li><a href="pages/servicios.html" target="_blank">SERVICIOS</a></li>
                 <!-- El 'targe = "_blank"' es para dejar "fija y no perder" la pestaña del inicio y que se abran las otras pestañas del menú a un lado. USAR SOLO EN EL INDEX-->
-                <li><span><a href="pages/galeria.html" target="_blank">GALERÍA</a></span></li>
-                <li><span><a href="pages/mis_reservas.html" target="_blank">RESERVAS</a></span></li>
+                <li><a href="pages/galeria.html" target="_blank">GALERÍA</a></li>
+                <li><a href="pages/mis_reservas.html" target="_blank">RESERVAS</a></li>
             </ul>
         </nav>
     </header> <!--Fin del header que es igual en las 4 pág-->
@@ -39,8 +38,8 @@
 
     <main>
         <div>
-            <section>
-                <article class=article1>
+            <section class="inicio">
+                <article>
                     <!-- Se arma un carrousel con dos fotos ofreciendo servicios que se pueden compartir, la descripción puede ir en la foto -->
                     <div class="carrousel">
                         <!--En este div va un carrete de fotografias con algunos servicios, su título y una pequeña descripción-->
@@ -57,17 +56,13 @@
                         <a class="masServicios" href="./pages/servicios.html" target="_blank"><b>Ver más</b></a>
                     </div>
                 </article>
-                <br>
-                <br>
-                <br>
+            
                 <article>
                     <div class="titular">
                         <h2>"Titular llamativo del Spa Bambú"</h2>
                     </div>
                 </article>
-                <br>
-                <br>
-                <br>
+        
                 <article class="opiniones">
                     <div class="clientes">
                         <!--En este div va la sección de comentarios de los usuarios sobre el servicio-->
@@ -93,82 +88,94 @@
                         </div>
                     </div>
                 </article>
+              </div>
+
+                <article class="article2">
+                    <div class="quienes_somos">
+
+                        <h2>¿QUIÉNES SOMOS?</h2>
+
+                        <div class="descripcion">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe,
+                            fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
+                        </div>
+                    </div>
+
+                </article>
+
+                <aside>
+                    <div class="videoInicio">
+                        <div class="promo">
+                            <iframe src="https://www.youtube.com/embed/wCt4rHavSRI" title="Cinematic massage sequence" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>  
+                </aside>
+
+                <article class="tablaValores">
+                    <div class="tabla">
+                        <table class="valores">
+                            <tr>
+                                <td>
+                                    <div class="column">
+                                        <h3>Nuestros valores</h3>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="column">
+                                        <h3>Servicio</h3>
+                                        <img class="icono" src="./ico/icono_servicios.png" alt="icono 1">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="column">
+                                        <h3>Dedicación</h3>
+                                        <img class="icono" src="./ico/icono_dedicacion.png" alt="icono 2">
+                                    </div>
+                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="column">
+                                        <h3>Compromiso</h3>
+                                        <img class="icono" src="./ico/icono_compromiso.png" alt="icono 3"> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="column">
+                                        <h3>Excelencia</h3>
+                                        <img class="icono" src="./ico/icono_excelencia.png" alt="icono 3">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="column">
+                                        <h3>Cooperación</h3>
+                                        <img class="icono" src="./ico/icono_trabajo.svg" alt="icono 4">
+                                    </div>  
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
             </section>
         </div>
-
-        <br>
-        <br>
-
-        <aside> <!--Esta es la sección lateral, que va al lado del section-->
-            <div class="quienes_somos">
-                <h2>¿QUIÉNES SOMOS?</h2>
-                <div class="descripcion">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe,
-                        fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
-                </div>
-
-                <img id="logoPequeño" src="img/logo.jpg" alt="logo pequeño">
-            </div>
-
-            <video controls width="640" height="360">
-                <source src="./img/massage_-_701 (360p).mp4" type="video/mp4">
-                Tu navegador no soporta el tag de video.
-            </video>
-            
-        </aside>
-        <table>
-                <tr>
-                    <td>
-                        <div class="column">
-                            <h3>Nuestros valores</h3>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="column">
-                            <h3>Servicios</h3>
-                            <img class="icono" src="./img/icono_servicios.png" alt="icono 1">
-                        </div>
-                    </td>
-                    <td>
-                        <h3>Dedicación</h3>
-                        <img class="icono" src="./img/icono_dedicacion.png" alt="icono 2">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Compromiso</h3>
-                        <img class="icono" src="./img/icono_compromiso.png" alt="icono 3">
-                    </td>
-                    <td>
-                        <h3>Excelencia</h3>
-                        <img class="icono" src="./img/icono_excelencia.png" alt="icono 3">
-                    </td>
-                    </td>
-                    <td>
-                        <h3>Cooperación</h3>
-                        <img class="icono" src="./img/icono_trabajo.svg" alt="icono 4">
-                    </td>
-                </tr>
-            </table>
-
     </main>
-    <br>
-    <br>
-    <br>
+
     <footer>
 
         <div class="redes">
-            <h3>Siguenos en Nuestras Redes</h3>
-            <i class="fa-brands fa-instagram"></i>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <i class="fa-brands fa-facebook"></i> <!--Enlace del icon-->
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <div class="contacto">
-                <h3>Contáctanos por WhatsApp</h3>
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
-            </div>
+                    <h3>Siguenos en Nuestras Redes</h3>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <i class="fa-brands fa-facebook"></i> <!--Enlace del icon-->
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+
+                <div class="contacto">
+                    <h3>Contáctanos por WhatsApp</h3>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+                </div>
         </div>
 
         <div id="direccion">
@@ -189,7 +196,7 @@
             <p> Domingos de 10 am. a 7 pm.</p>
         </div>
 
-        <div class="copyright">
+        <div id="copyright">
             <h4>Copyright © 2023 Spa Bambú</h4>
         </div>
 

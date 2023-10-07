@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--COMIENZO DEL HEAD-->  
+<!--COMIENZO DEL HEAD-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA BAMBÚ</title> <!--Para nombrar la pestaña de la web-->
     <link rel="Shortcut icon" href="img/logo.ico" type="image/x-icon"> <!--ICO del logo -->
     <link rel="stylesheet" href="./css/style.css"> <!--Unir el CSS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">  <!--fuentes de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--fuentes de google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<!--FIN DEL HEAD-->  
+<!--FIN DEL HEAD-->
 
 
-<!--COMIENZO DEL CONTENIDO-->  
+<!--COMIENZO DEL CONTENIDO-->
+
 <body>
-    <header>  <!--Este header contiene el logo y el nav menú-->
+    <header> <!--Este header contiene el logo y el nav menú-->
         <div>
             <img id="logo" src="img/logo.jpg" alt="logo de la empresa"> <!--El atributo "alt" nos sirve para el SEO-->
         </div>
         <h1 id="titulo">SPA BAMBÚ</h1> <!--Este titulo debe ir centrado entre el logo y el nav menú-->
         <nav class="navbar">
             <ul>
-                <li><span><a>INICIO</a></span></li> 
-                <li><span><a href="pages/servicios.html" target="_blank">SERVICIOS</a></span></li> <!-- El 'targe = "_blank"' es para dejar "fija y no perder" la pestaña del inicio y que se abran las otras pestañas del menú a un lado. USAR SOLO EN EL INDEX-->
+                <li><span><a>INICIO</a></span></li>
+                <li><span><a href="pages/servicios.html" target="_blank">SERVICIOS</a></span></li>
+                <!-- El 'targe = "_blank"' es para dejar "fija y no perder" la pestaña del inicio y que se abran las otras pestañas del menú a un lado. USAR SOLO EN EL INDEX-->
                 <li><span><a href="pages/galeria.html" target="_blank">GALERÍA</a></span></li>
                 <li><span><a href="pages/mis_reservas.html" target="_blank">RESERVAS</a></span></li>
             </ul>
         </nav>
-    </header>  <!--Fin del header que es igual en las 4 pág-->  
+    </header> <!--Fin del header que es igual en las 4 pág-->
 
     <br>
     <br>
 
     <main>
-       <div>
+        <div>
             <section>
-                <article class = article1>
+                <article class=article1>
                     <!-- Se arma un carrousel con dos fotos ofreciendo servicios que se pueden compartir, la descripción puede ir en la foto -->
-                    <div class="carrousel"> <!--En este div va un carrete de fotografias con algunos servicios, su título y una pequeña descripción-->
+                    <div class="carrousel">
+                        <!--En este div va un carrete de fotografias con algunos servicios, su título y una pequeña descripción-->
                         <div class="fondo_grande">
-                            <img src="./img/spa con amigas.jpg" alt="spa con amigas" class = "img">
+                            <img src="./img/spa con amigas.jpg" alt="spa con amigas" class="img">
                             <img src="./img/spa en pareja.jpg" alt="spa en pareja" class="img">
                         </div>
 
@@ -50,7 +54,7 @@
                             <li class="punto" class="activo"></li>
                         </ul>
                         <!-- Se agrega un botón para ir a ver más servicios -->
-                        <a class="masServicios" href="./pages/servicios.html" target ="_blank"><b>Ver más</b></a>
+                        <a class="masServicios" href="./pages/servicios.html" target="_blank"><b>Ver más</b></a>
                     </div>
                 </article>
                 <br>
@@ -65,84 +69,131 @@
                 <br>
                 <br>
                 <article class="opiniones">
-                    <div class="clientes"> <!--En este div va la sección de comentarios de los usuarios sobre el servicio-->
+                    <div class="clientes">
+                        <!--En este div va la sección de comentarios de los usuarios sobre el servicio-->
                         <h3>OPINIONES DE CLIENTES</h3>
-                            <div class="opinion1">
-                                <p>"Me encantó el lugar, necesitaba relajarme después de una semana muy intensa en el trabajo y gracias al personal de Spa Bambú
-                                logré desestresarme y liberar tensión. Mi majase favorito fue el de piedras calientes."</p>
-                                <h4>Ana María</h4>
-                            </div>
-                            <div class= "opinion2">
-                                <p>"¡¡Recomendable!! Mi esposa y yo hicimos el circuito en pareja y lo volveriamos a hacer mil veces más.
+                        <div class="opinion1">
+                            <p>"Me encantó el lugar, necesitaba relajarme después de una semana muy intensa en el
+                                trabajo y gracias al personal de Spa Bambú
+                                logré desestresarme y liberar tensión. Mi majase favorito fue el de piedras calientes."
+                            </p>
+                            <h4>Ana María</h4>
+                        </div>
+                        <div class="opinion2">
+                            <p>"¡¡Recomendable!! Mi esposa y yo hicimos el circuito en pareja y lo volveriamos a hacer
+                                mil veces más.
                                 Nos atendieron con la mejor onda y los masajes estuvieron estupendos."</p>
-                                <h4>Diego Duarte</h4>
-                            </div>
-                            <div class="opinion3">
-                                <p>"Quedamos re encantadas, vine con mis amigas e hicimos el circuito en grupo y luego disfrutamos de la pileta climatizada, 
+                            <h4>Diego Duarte</h4>
+                        </div>
+                        <div class="opinion3">
+                            <p>"Quedamos re encantadas, vine con mis amigas e hicimos el circuito en grupo y luego
+                                disfrutamos de la pileta climatizada,
                                 pasamos un excelente día."</p>
-                                <h4>Lucia Alejandra</h4>
-                            </div>
+                            <h4>Lucia Alejandra</h4>
+                        </div>
                     </div>
                 </article>
             </section>
-       </div>
-       
-       <br>
-       <br>
-       
-        <aside>  <!--Esta es la sección lateral, que va al lado del section-->
+        </div>
+
+        <br>
+        <br>
+
+        <aside> <!--Esta es la sección lateral, que va al lado del section-->
             <div class="quienes_somos">
-                <h2>¿QUIÉNES SOMOS?</h2> 
+                <h2>¿QUIÉNES SOMOS?</h2>
                 <div class="descripcion">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe, 
-                    fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Impedit accusantium ex porro sed in eum quae, sint aliquam assumenda placeat saepe,
+                        fugiat explicabo, recusandae aliquid repellendus ducimus at illum. Voluptatem!</p>
                 </div>
-                
+
                 <img id="logoPequeño" src="img/logo.jpg" alt="logo pequeño">
             </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <div class="column">
+                            <h3>Nuestros valores</h3>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <h3>Servicios</h3>
+                            <img class="icono" src="./img/icono_servicios.png" alt="icono 1">
+                        </div>
+                    </td>
+                    <td>
+                        <h3>Dedicación</h3>
+                        <img class="icono" src="./img/icono_dedicacion.png" alt="icono 2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Compromiso</h3>
+                        <img class="icono" src="./img/icono_compromiso.png" alt="icono 3">
+                    </td>
+                    <td>
+                        <h3>Excelencia</h3>
+                        <img class="icono" src="./img/icono_excelencia.png" alt="icono 3">
+                    </td>
+                    </td>
+                    <td>
+                        <h3>Cooperación</h3>
+                        <img class="icono" src="./img/icono_trabajo.svg" alt="icono 4">
+                    </td>
+                </tr>
+            </table>
         </aside>
+
+
     </main>
     <br>
     <br>
     <br>
-   <footer>
-        
+    <footer>
+
         <div class="redes">
             <h3>Siguenos en Nuestras Redes</h3>
             <i class="fa-brands fa-instagram"></i>
             <a href="https://instagram.com" target="_blank">Instagram</a>
-            <i class="fa-brands fa-facebook"></i>  <!--Enlace del icon-->
+            <i class="fa-brands fa-facebook"></i> <!--Enlace del icon-->
             <a href="https://facebook.com" target="_blank">Facebook</a>
             <div class="contacto">
                 <h3>Contáctanos por WhatsApp</h3>
                 <i class="fa-brands fa-whatsapp"></i>
                 <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
-             </div>
+            </div>
         </div>
 
-         <div id="direccion">
+        <div id="direccion">
             <h3>Nuestro Spa</h3>
             <p> Av. Arcoiris del Cielo 250 </p>
             <p>E-mail: spabambu@gmail.org</p>
         </div>
 
         <div>
-            <iframe id ="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3286.0826502707114!2d-58.47383975608753!3d-34.55146268524606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1695861439596!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3286.0826502707114!2d-58.47383975608753!3d-34.55146268524606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1695861439596!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div id="horarios">
             <h3>Horarios de Atención</h3>
             <p> Lunes a sábado de 9 am. a 10 pm.</p>
             <p> Domingos de 10 am. a 7 pm.</p>
         </div>
 
-        <div class="copyright" >
+        <div class="copyright">
             <h4>Copyright © 2023 Spa Bambú</h4>
         </div>
 
-    </footer>  
+    </footer>
 
-    <script src="https://kit.fontawesome.com/2abd5c34d8.js" crossorigin="anonymous"></script> <!--Este es el scrip de los icons-->
+    <script src="https://kit.fontawesome.com/2abd5c34d8.js" crossorigin="anonymous"></script>
+    <!--Este es el scrip de los icons-->
     <script defer src="./javascript/funciones.js"></script>
 </body>
+
 </html>

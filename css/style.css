@@ -1,19 +1,21 @@
-body{
+body {
     background-color: #b7d2c3;
     overflow-x: hidden;
-    font-family: 'roboto'  , 'abril fatface';
+    font-family: 'oboto', 'abril fatface';
+
 }
+
 /* comienza el diseño del header */
 header {
     background-color: #3d6953;
     width: 1440px;
     height: 80px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     padding: 0;
 }
-    
-#logo{
+
+#logo {
     width: 80px;
     height: 80px;
     float: left;
@@ -22,7 +24,7 @@ header {
 
 #titulo {
     text-align: center;
-    color: #dde7ec ;
+    color: #dde7ec;
     margin: 0;
     margin-right: 200px;
     padding: 10px;
@@ -34,7 +36,7 @@ header {
     height: 40px;
     float: right;
     margin-top: 20px;
-    
+
 }
 
 .navbar ul {
@@ -74,10 +76,11 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .carrousel {
     width: 50%;
     max-width: 120em;
-    padding: 2em; 
+    padding: 2em;
     border-style: inset;
     border-color: #e1c6cc;
     background-color: #e1c6cc;
@@ -101,7 +104,7 @@ header {
     border-radius: 1em;
     border-style: outset;
     transition: all .5s ease;
-    transform: translateX(0%);  
+    transform: translateX(0%);
 }
 
 .fondo_grande .img {
@@ -134,19 +137,19 @@ header {
 }
 
 .activo {
-    background-color: #7ca692; 
+    background-color: #7ca692;
 }
 
 /* Diseño de botón para ver más */
 .masServicios {
-    border: 1px solid #3d6953; 
-    padding: 10px; 
-    background-color: #3d6953; 
-    color: rgb(0, 0, 0); 
-    text-decoration: none; 
-    text-transform: uppercase; 
-    font-family: 'roboto'; 
-    border-radius: 50px; 
+    border: 1px solid #3d6953;
+    padding: 10px;
+    background-color: #3d6953;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'roboto';
+    border-radius: 50px;
     float: right;
 }
 
@@ -172,7 +175,7 @@ header {
     height: 300px;
     padding: 20px;
     border: 1px solid #3d6953;
-    border-radius: 1em; 
+    border-radius: 1em;
     margin-top: 30px;
     margin-bottom: 10px;
     margin-left: auto;
@@ -193,7 +196,7 @@ header {
     padding: 2em;
     border-style: outset;
     border-radius: 1em;
-    float:left;
+    float: left;
 }
 
 .opinion1 p {
@@ -217,16 +220,16 @@ header {
     border-style: outset;
     border-radius: 1em;
     margin-left: 65px;
-    float:left;
+    float: left;
 }
-    
+
 .opinion2 p {
     text-align: center;
     font-family: 'roboto';
     text-justify: distribute;
     font-style: oblique;
 }
-    
+
 .opinion2 h4 {
     text-align: end;
     font-style: italic;
@@ -249,7 +252,7 @@ header {
     text-justify: distribute;
     font-style: oblique;
 }
-        
+
 .opinion3 h4 {
     text-align: end;
     font-style: italic;
@@ -276,10 +279,10 @@ header {
     margin-top: 30px;
     margin-bottom: 20px;
     float: left;
-    border-style:outset;
+    border-style: outset;
     border-radius: 2em;
 }
-    
+
 .quienes_somos h2 {
     text-align: left;
     font-family: 'abril fatface';
@@ -294,7 +297,7 @@ header {
     display: flex;
 }
 
-.videoInicio{
+.videoInicio {
     width: 800px;
     height: 400px;
     padding: 20px;
@@ -302,7 +305,7 @@ header {
     margin-bottom: 20px;
     margin-right: 20px;
     float: right;
-    display:table;
+    display: table;
 }
 
 .promo iframe {
@@ -323,19 +326,22 @@ header {
 .tabla table {
     margin-top: 20px;
     margin-left: 50px;
-    border-collapse: collapse; /*junta los bordes en una sola linea*/
+    border-collapse: collapse;
+    /*junta los bordes en una sola linea*/
     align-self: center;
     width: 80%;
     height: 500px;
     padding: 2em;
-    
+
 }
-.tabla .valores td{
+
+.tabla .valores td {
     text-align: center;
-    margin: 70px; /* Agregamos un margen para separar las columnas */
-    border: 1px solid #3C6952; /* Añadimos bordes */
+    margin: 70px;
+    border: 1px solid #3C6952;
     padding: 30px;
 }
+
 .tabla .valores tr:first-child td {
     border-top: none;
 }
@@ -358,6 +364,7 @@ header {
 section {
     align-items: center;
 }
+
 .cards h2 {
     width: 100%;
     float: left;
@@ -365,7 +372,8 @@ section {
     font-size: 60px;
     font-family: 'Abril Fatface';
     margin-left: 20px;
-    text-shadow: 2px 2px 2px #ccc;    /*sombra*/
+    text-shadow: 2px 2px 2px #ccc;
+    /*sombra*/
     background-color: #f8f8f8;
     padding: 10px;
 }
@@ -427,15 +435,17 @@ button:hover {
 
 /*GALERIA*/
 
-#titlo_galeria{
+#titlo_galeria {
     text-align: center;
     color: #3C6952;
     font-size: 60px;
     font-family: 'Abril Fatface';
     margin-top: 20px;
-    text-shadow: 2px 2px 2px #ccc;    /*sombra*/
+    text-shadow: 2px 2px 2px #ccc;
+    /*sombra*/
     padding: 10px;
 }
+
 .section_galeria {
     display: flex;
     width: 1400px;
@@ -471,29 +481,34 @@ button:hover {
     font-family: 'Abril Fatface';
     font-weight: 200;
     font-family: 'Abril Fatface';
-    letter-spacing: 2px; /* espacio entre letras  */
+    letter-spacing: 2px;
+    /* espacio entre letras  */
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     margin-bottom: 1cqb;
 }
-.formulario p{
+
+.formulario p {
     margin: 10px;
     font-family: 'Roboto';
     font-size: 18px;
     color: #3C6952;
     font-weight: bold;
 }
-.mis_reservas{
+
+.mis_reservas {
     float: left;
     text-align: start;
     margin-left: 50px;
 }
-.calendar{
+
+.calendar {
     float: right;
-    width: 80%; 
-   
-    
+    width: 80%;
+
+
 }
-iframe{
+
+iframe {
     margin-top: 20px;
     margin-bottom: 20px;
     flex-direction: row;
@@ -501,24 +516,27 @@ iframe{
 
 
 }
+
 fieldset {
-    margin-top:10px;
+    margin-top: 10px;
     background-color: #ffffff;
-    box-shadow: 2px 2px 5px #000000 ;
+    box-shadow: 2px 2px 5px #000000;
     border: none;
 }
 
-.campo{
+.campo {
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
     border: none;
-    box-shadow: 2px 2px 5px #000000 ;
+    box-shadow: 2px 2px 5px #000000;
 }
+
 label {
     margin-right: 10px;
     font-family: 'Roboto';
 }
+
 .formulario button {
     background-color: #3C6952;
     color: white;
@@ -531,13 +549,15 @@ label {
     cursor: pointer;
     border-radius: 5px;
 }
-#comentarios{
+
+#comentarios {
     height: 100px;
     width: 100%;
     border: none;
-    box-shadow: 2px 2px 5px #000000 ;
+    box-shadow: 2px 2px 5px #000000;
 }
-legend{
+
+legend {
     font-family: 'Roboto';
     font-size: 18px;
     color: #3C6952;
@@ -555,7 +575,7 @@ footer {
     margin-bottom: 0;
 }
 
-.redes{
+.redes {
     width: 300px;
     height: 100px;
     margin-top: 30px;
@@ -577,7 +597,7 @@ footer {
     font-family: 'roboto';
 }
 
-#direccion{
+#direccion {
     width: 300px;
     height: 180px;
     float: left;
@@ -585,6 +605,7 @@ footer {
     margin-top: 30px;
     margin-left: 30px;
 }
+
 #direccion h3 {
     font-size: 20px;
     color: #dde7ec;
@@ -627,6 +648,196 @@ footer {
 
 #copyright h4 {
     color: #dde7ec;
-    float:left;
+    float: left;
     margin-top: 200px;
 }
+
+/*Comienza el Responsive*/
+
+/*Responsive para tablets*/
+
+@media all and (min-width: 600px) and (max-width:1023px) {
+    header {
+        width: 1000px;
+        height: 80px;
+    }
+
+    .navbar ul li a {
+        padding: 8px;
+    }
+
+    .inicio {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Diseño del titular al lado del carrusel de fotos */
+
+    .titular {
+        width: 25%;
+        height: auto;
+        margin-left: 15px;
+    }
+
+    /* Diseño sección opiniones de clientes */
+    .clientes {
+        background-color: #7ca692;
+        width: 95%;
+        height: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .clientes h3 {
+        text-align: center;
+    }
+    .opinion1,
+    .opinion2,
+    .opinion3 {
+        width: 80%;
+        height: 110px;
+        padding: 1em;
+    }
+
+    /* Comienza el diseño del aside y se agrega un video al lado */
+
+    .quienes_somos {
+        width: 450px;
+        height: 500px;
+    }
+
+
+    .videoInicio {
+        width: 50%;
+        height: auto;
+        margin-top: -500px;
+    }
+
+    .promo iframe {
+        width: 80%;
+        height: 330px;
+        margin-top: 10px;
+        margin-left: 100px;
+        border-radius: 10%;
+    }
+
+    /* Nuestros valores*/
+    .tablaValores {
+        width: 100%;
+        max-width: 1440px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabla table {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        align-self: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 2em;
+    }
+
+    .tabla .valores td {
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /*Footer*/
+    footer {
+        width: 1440px;
+        height: 400px;
+        background-color: #3d6953;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    
+    .redes {
+        width: 140px;
+        height: 150px;
+        margin-right: 600px;
+        float: right;
+        color: #e1c6cc;
+        padding: 0px;
+        box-sizing: border-box;
+    }    
+    #direccion {
+        width: 200px;
+        height: 150px;
+        float: left;
+        padding: 5px;
+        margin-top: 30px;
+        margin-left: none;
+    }
+
+    #mapa {
+        width: 200px;
+        height: 200px;
+        float: left;
+        padding: 30px;
+        margin-right: 10px;
+    }
+    
+    #horarios {
+        width: 160px;
+        height: 150px;
+        float: left;
+        color: #dde7ec;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 10px;
+        
+    }
+    
+    #copyright h4 {
+        color: #dde7ec;
+        float: left;
+        margin-top: 150px;
+    
+    }
+    /*Page servicios*/
+    .cards {
+        padding-left: 20px;
+        width: 80%;
+    }
+
+    .cards h2 {
+        font-size: 40px;
+    }
+
+    .tarjeta {
+        width: 100%;
+
+    }
+
+    .tarjeta img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    /*Page galeria*/
+
+    #titlo_galeria {
+        font-size: 40px;
+    }
+
+    .section_galeria {
+        width: 950px;
+        padding: 1px;
+        margin-top: none;
+    }
+
+    /*Page Reservas*/
+    .mis_reservas {
+        width: 80%;
+        padding-left: 40px;
+    }
+
+}
+/* Termina el responsive de tablet*/

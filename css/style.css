@@ -782,6 +782,13 @@ footer {
         margin-top: 10px;
         float: none;
     }
+    .opinion3 h4 {
+        padding-top: 30px;
+    }
+
+    .opinion2 h4 {
+        padding-top: 10px;
+    }
 
     /* Comienza el diseño del aside y se agrega un video al lado */
     

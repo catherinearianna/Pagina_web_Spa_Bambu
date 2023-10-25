@@ -210,6 +210,7 @@ header {
     text-align: end;
     font-style: italic;
     font-family: 'roboto';
+
 }
 
 .opinion2 {
@@ -236,6 +237,7 @@ header {
     text-align: end;
     font-style: italic;
     font-family: 'roboto';
+    padding-top: 30px;
 }
 
 .opinion3 {
@@ -262,6 +264,8 @@ header {
     text-align: end;
     font-style: italic;
     font-family: 'roboto';
+    padding-top: 49px;
+
 }
 
 /* Comienza el diseño del aside y se agrega un video al lado */
@@ -413,6 +417,7 @@ p {
     text-align: left;
     padding: 10px;
 }
+
 
 .precio p {
     color: #000000;

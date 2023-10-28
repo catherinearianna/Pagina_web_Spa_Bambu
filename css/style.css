@@ -586,12 +586,12 @@ legend {
 
 footer {
     width: 960px;
-    height: 350px;
+    height: 320px;
     background-color: #3d6953;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: auto;
     
 }
 
@@ -600,7 +600,7 @@ footer {
     height: 180px;
     float: left;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: 10px;
 }
@@ -621,18 +621,18 @@ footer {
     height: 150px;
     float: left;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #horarios {
     width: 150px;
-    height: 180px;
+    height: 250px;
     float: left;
     color: #dde7ec;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -650,7 +650,7 @@ footer {
 .redes {
     width: 150px;
     height: 180px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-right: 10px;
     margin-left: 10px;
     float: left;
@@ -682,7 +682,7 @@ footer {
 .contacto {
     width: 150px;
     height: 180px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-right: 10px;
     margin-left: auto;
     float: left;
@@ -714,7 +714,9 @@ footer {
     float: none;
     margin-left: 340px;
 }
+
 #copyright h4 {
+    font-size: 15px;
     color: #dde7ec;
 }
 
@@ -1001,12 +1003,11 @@ footer {
     /* Comienza el diseño del footer */
     footer {
         width: 100%;
-        height: 350px;
-        margin-top: 200px;
+        height: 360px;
     }
     
     #direccion {
-        width: 120px;
+        width: 110px;
         height: auto;
         float: left;
         margin-top: 0;
@@ -1031,7 +1032,7 @@ footer {
     }
     
     #horarios {
-        width: 120px;
+        width: 110px;
         height: auto;
         float: left;
         padding: 10px;
@@ -1048,7 +1049,7 @@ footer {
     }
     
     .redes {
-        width: 150px;
+        width: 140px;
         height: 50px;
         margin-left: none;
         margin-top: 0;
@@ -1065,13 +1066,14 @@ footer {
     }
 
     .contacto {
-        width: 100px;
+        width: 90px;
         height: 50px;
         float: left;
         margin-left: none;
         margin-top: 0;
-        margin-right: 10px;
+        margin-right: 0;
         padding: 10px;
+        text-align: center;
     }
     
     .contacto h3 {
@@ -1087,10 +1089,12 @@ footer {
     }
 
     #copyright {
-        float: left;
-        width: 150px;
+        float: inline-end;
+        width: 300px;
         height: auto;
-        padding: 0px;
+        padding: 0;
+        margin-right: 140px;
+
     }
     #copyright h4 {
         font-size: 10px;
@@ -1412,11 +1416,11 @@ footer {
         padding: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        text-align: center;
     }
     
     .redes h3 {
         font-size: 15px;
-        text-align: left;
         text-align: center;
     }
     
@@ -1435,6 +1439,7 @@ footer {
         padding: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        text-align: center;
     }
     
     .contacto h3 {
@@ -1454,6 +1459,8 @@ footer {
         float: none;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
     }
 
     #copyright h4 {
